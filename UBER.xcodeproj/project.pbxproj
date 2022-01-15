@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74566AA3270250A90099EA2B /* PickUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74566AA2270250A90099EA2B /* PickUpController.swift */; };
+		7484104F26F97F4A0066D456 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484102E26F97F490066D456 /* Constants.swift */; };
+		7484105026F97F4A0066D456 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103026F97F490066D456 /* User.swift */; };
+		7484105126F97F4A0066D456 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103126F97F490066D456 /* DriverAnnotation.swift */; };
+		7484105326F97F4A0066D456 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103526F97F4A0066D456 /* Extentions.swift */; };
+		7484105426F97F4A0066D456 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103626F97F4A0066D456 /* LocationHandler.swift */; };
+		7484105526F97F4A0066D456 /* HUDHandeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103726F97F4A0066D456 /* HUDHandeler.swift */; };
+		7484105626F97F4A0066D456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7484103926F97F4A0066D456 /* Assets.xcassets */; };
+		7484105726F97F4A0066D456 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7484103A26F97F4A0066D456 /* GoogleService-Info.plist */; };
+		7484105826F97F4A0066D456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7484103B26F97F4A0066D456 /* LaunchScreen.storyboard */; };
+		7484105A26F97F4A0066D456 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484103F26F97F4A0066D456 /* HomeController.swift */; };
+		7484105B26F97F4A0066D456 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104026F97F4A0066D456 /* LoginController.swift */; };
+		7484105C26F97F4A0066D456 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104126F97F4A0066D456 /* SignUpController.swift */; };
+		7484105D26F97F4A0066D456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104326F97F4A0066D456 /* AppDelegate.swift */; };
+		7484105E26F97F4A0066D456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104426F97F4A0066D456 /* SceneDelegate.swift */; };
+		7484105F26F97F4A0066D456 /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104626F97F4A0066D456 /* LocationInputView.swift */; };
+		7484106026F97F4A0066D456 /* RideUBERXViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104726F97F4A0066D456 /* RideUBERXViewAction.swift */; };
+		7484106126F97F4A0066D456 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104926F97F4A0066D456 /* StackView.swift */; };
+		7484106226F97F4A0066D456 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104A26F97F4A0066D456 /* SegmentedControl.swift */; };
+		7484106326F97F4A0066D456 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104B26F97F4A0066D456 /* AuthButton.swift */; };
+		7484106426F97F4A0066D456 /* LocationInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104C26F97F4A0066D456 /* LocationInputActivationView.swift */; };
+		7484106526F97F4A0066D456 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484104E26F97F4A0066D456 /* LocationCell.swift */; };
+		74A312642707612500C2B766 /* Helper Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A312632707612500C2B766 /* Helper Function.swift */; };
+		74C13B4326FBD772000EA126 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C13B4226FBD772000EA126 /* Trip.swift */; };
+		74D65C372706BE9E00AA4D84 /* FUSerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D65C362706BE9E00AA4D84 /* FUSerListener.swift */; };
+		74D65C392706BF1700AA4D84 /* FDriverListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D65C382706BF1700AA4D84 /* FDriverListener.swift */; };
+		74D65C3B2706BFB300AA4D84 /* FTripListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D65C3A2706BFB300AA4D84 /* FTripListener.swift */; };
+		89F2ED20FEFA962406FD0D80 /* Pods_UBER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09418A2AA579E5D06EECF672 /* Pods_UBER.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09418A2AA579E5D06EECF672 /* Pods_UBER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A5C24B913D86B86AD1B14 /* Pods-UBER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBER.release.xcconfig"; path = "Target Support Files/Pods-UBER/Pods-UBER.release.xcconfig"; sourceTree = "<group>"; };
+		74566AA2270250A90099EA2B /* PickUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpController.swift; sourceTree = "<group>"; };
+		7484101626F97F250066D456 /* UBER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7484102E26F97F490066D456 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7484103026F97F490066D456 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7484103126F97F490066D456 /* DriverAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
+		7484103526F97F4A0066D456 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		7484103626F97F4A0066D456 /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		7484103726F97F4A0066D456 /* HUDHandeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDHandeler.swift; sourceTree = "<group>"; };
+		7484103926F97F4A0066D456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7484103A26F97F4A0066D456 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7484103C26F97F4A0066D456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7484103F26F97F4A0066D456 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		7484104026F97F4A0066D456 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7484104126F97F4A0066D456 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		7484104326F97F4A0066D456 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7484104426F97F4A0066D456 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7484104626F97F4A0066D456 /* LocationInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
+		7484104726F97F4A0066D456 /* RideUBERXViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideUBERXViewAction.swift; sourceTree = "<group>"; };
+		7484104926F97F4A0066D456 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		7484104A26F97F4A0066D456 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		7484104B26F97F4A0066D456 /* AuthButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		7484104C26F97F4A0066D456 /* LocationInputActivationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInputActivationView.swift; sourceTree = "<group>"; };
+		7484104E26F97F4A0066D456 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		7484106626F97F8E0066D456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A312632707612500C2B766 /* Helper Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Function.swift"; sourceTree = "<group>"; };
+		74C13B4226FBD772000EA126 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		74D65C362706BE9E00AA4D84 /* FUSerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUSerListener.swift; sourceTree = "<group>"; };
+		74D65C382706BF1700AA4D84 /* FDriverListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDriverListener.swift; sourceTree = "<group>"; };
+		74D65C3A2706BFB300AA4D84 /* FTripListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTripListener.swift; sourceTree = "<group>"; };
+		BEBE4FD6C66323541AD5FFE0 /* Pods-UBER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBER.debug.xcconfig"; path = "Target Support Files/Pods-UBER/Pods-UBER.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7484101326F97F250066D456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F2ED20FEFA962406FD0D80 /* Pods_UBER.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682B416551B7FFC8055B6CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09418A2AA579E5D06EECF672 /* Pods_UBER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7484100D26F97F250066D456 = {
+			isa = PBXGroup;
+			children = (
+				7484101826F97F250066D456 /* UBER */,
+				7484101726F97F250066D456 /* Products */,
+				EB0BBA5CFC0F10E276C83DE3 /* Pods */,
+				682B416551B7FFC8055B6CF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7484101726F97F250066D456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7484101626F97F250066D456 /* UBER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7484101826F97F250066D456 /* UBER */ = {
+			isa = PBXGroup;
+			children = (
+				7484104226F97F4A0066D456 /* Core */,
+				7484102D26F97F490066D456 /* Helper */,
+				7484102F26F97F490066D456 /* Model */,
+				7484103226F97F490066D456 /* Services */,
+				7484104526F97F4A0066D456 /* View */,
+				7484103E26F97F4A0066D456 /* Controller */,
+				7484103426F97F4A0066D456 /* Utiles */,
+				7484103826F97F4A0066D456 /* Resources */,
+				7484106626F97F8E0066D456 /* Info.plist */,
+			);
+			path = UBER;
+			sourceTree = "<group>";
+		};
+		7484102D26F97F490066D456 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7484102E26F97F490066D456 /* Constants.swift */,
+				74A312632707612500C2B766 /* Helper Function.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7484102F26F97F490066D456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7484103026F97F490066D456 /* User.swift */,
+				74C13B4226FBD772000EA126 /* Trip.swift */,
+				7484103126F97F490066D456 /* DriverAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7484103226F97F490066D456 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74D65C362706BE9E00AA4D84 /* FUSerListener.swift */,
+				74D65C382706BF1700AA4D84 /* FDriverListener.swift */,
+				74D65C3A2706BFB300AA4D84 /* FTripListener.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7484103426F97F4A0066D456 /* Utiles */ = {
+			isa = PBXGroup;
+			children = (
+				7484103526F97F4A0066D456 /* Extentions.swift */,
+				7484103626F97F4A0066D456 /* LocationHandler.swift */,
+				7484103726F97F4A0066D456 /* HUDHandeler.swift */,
+			);
+			path = Utiles;
+			sourceTree = "<group>";
+		};
+		7484103826F97F4A0066D456 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7484103926F97F4A0066D456 /* Assets.xcassets */,
+				7484103A26F97F4A0066D456 /* GoogleService-Info.plist */,
+				7484103B26F97F4A0066D456 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7484103E26F97F4A0066D456 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74FD0E43273D6F3200C2167D /* Auth */,
+				74FD0E44273D6F4700C2167D /* Home */,
+				74FD0E45273D6F5C00C2167D /* PickUp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7484104226F97F4A0066D456 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7484104326F97F4A0066D456 /* AppDelegate.swift */,
+				7484104426F97F4A0066D456 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7484104526F97F4A0066D456 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7484104626F97F4A0066D456 /* LocationInputView.swift */,
+				7484104726F97F4A0066D456 /* RideUBERXViewAction.swift */,
+				7484104C26F97F4A0066D456 /* LocationInputActivationView.swift */,
+				7484104826F97F4A0066D456 /* CustomView */,
+				7484104D26F97F4A0066D456 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7484104826F97F4A0066D456 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				7484104926F97F4A0066D456 /* StackView.swift */,
+				7484104A26F97F4A0066D456 /* SegmentedControl.swift */,
+				7484104B26F97F4A0066D456 /* AuthButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		7484104D26F97F4A0066D456 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7484104E26F97F4A0066D456 /* LocationCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		74FD0E43273D6F3200C2167D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7484104026F97F4A0066D456 /* LoginController.swift */,
+				7484104126F97F4A0066D456 /* SignUpController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		74FD0E44273D6F4700C2167D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7484103F26F97F4A0066D456 /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		74FD0E45273D6F5C00C2167D /* PickUp */ = {
+			isa = PBXGroup;
+			children = (
+				74566AA2270250A90099EA2B /* PickUpController.swift */,
+			);
+			path = PickUp;
+			sourceTree = "<group>";
+		};
+		EB0BBA5CFC0F10E276C83DE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEBE4FD6C66323541AD5FFE0 /* Pods-UBER.debug.xcconfig */,
+				191A5C24B913D86B86AD1B14 /* Pods-UBER.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7484101526F97F250066D456 /* UBER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7484102A26F97F270066D456 /* Build configuration list for PBXNativeTarget "UBER" */;
+			buildPhases = (
+				947E545B65A42FF0BE8C2F9D /* [CP] Check Pods Manifest.lock */,
+				7484101226F97F250066D456 /* Sources */,
+				7484101326F97F250066D456 /* Frameworks */,
+				7484101426F97F250066D456 /* Resources */,
+				BE319288C908941483648B62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UBER;
+			productName = UBER;
+			productReference = 7484101626F97F250066D456 /* UBER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7484100E26F97F250066D456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7484101526F97F250066D456 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7484101126F97F250066D456 /* Build configuration list for PBXProject "UBER" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7484100D26F97F250066D456;
+			productRefGroup = 7484101726F97F250066D456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7484101526F97F250066D456 /* UBER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7484101426F97F250066D456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7484105826F97F4A0066D456 /* LaunchScreen.storyboard in Resources */,
+				7484105626F97F4A0066D456 /* Assets.xcassets in Resources */,
+				7484105726F97F4A0066D456 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		947E545B65A42FF0BE8C2F9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UBER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE319288C908941483648B62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UBER/Pods-UBER-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UBER/Pods-UBER-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBER/Pods-UBER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7484101226F97F250066D456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C13B4326FBD772000EA126 /* Trip.swift in Sources */,
+				7484105D26F97F4A0066D456 /* AppDelegate.swift in Sources */,
+				7484105526F97F4A0066D456 /* HUDHandeler.swift in Sources */,
+				7484105026F97F4A0066D456 /* User.swift in Sources */,
+				74D65C392706BF1700AA4D84 /* FDriverListener.swift in Sources */,
+				7484106026F97F4A0066D456 /* RideUBERXViewAction.swift in Sources */,
+				7484106426F97F4A0066D456 /* LocationInputActivationView.swift in Sources */,
+				7484105326F97F4A0066D456 /* Extentions.swift in Sources */,
+				74D65C3B2706BFB300AA4D84 /* FTripListener.swift in Sources */,
+				7484105B26F97F4A0066D456 /* LoginController.swift in Sources */,
+				7484105C26F97F4A0066D456 /* SignUpController.swift in Sources */,
+				7484105A26F97F4A0066D456 /* HomeController.swift in Sources */,
+				7484105426F97F4A0066D456 /* LocationHandler.swift in Sources */,
+				7484105126F97F4A0066D456 /* DriverAnnotation.swift in Sources */,
+				74D65C372706BE9E00AA4D84 /* FUSerListener.swift in Sources */,
+				7484105F26F97F4A0066D456 /* LocationInputView.swift in Sources */,
+				7484106326F97F4A0066D456 /* AuthButton.swift in Sources */,
+				7484104F26F97F4A0066D456 /* Constants.swift in Sources */,
+				7484106526F97F4A0066D456 /* LocationCell.swift in Sources */,
+				74566AA3270250A90099EA2B /* PickUpController.swift in Sources */,
+				7484105E26F97F4A0066D456 /* SceneDelegate.swift in Sources */,
+				7484106226F97F4A0066D456 /* SegmentedControl.swift in Sources */,
+				74A312642707612500C2B766 /* Helper Function.swift in Sources */,
+				7484106126F97F4A0066D456 /* StackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7484103B26F97F4A0066D456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7484103C26F97F4A0066D456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7484102826F97F270066D456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7484102926F97F270066D456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7484102B26F97F270066D456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBE4FD6C66323541AD5FFE0 /* Pods-UBER.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4XXQXQMM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UBER/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afathe7090.UBER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7484102C26F97F270066D456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191A5C24B913D86B86AD1B14 /* Pods-UBER.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V4XXQXQMM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UBER/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please , allow us to access your loaction so we can find you rides nearly";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afathe7090.UBER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7484101126F97F250066D456 /* Build configuration list for PBXProject "UBER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7484102826F97F270066D456 /* Debug */,
+				7484102926F97F270066D456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7484102A26F97F270066D456 /* Build configuration list for PBXNativeTarget "UBER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7484102B26F97F270066D456 /* Debug */,
+				7484102C26F97F270066D456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7484100E26F97F250066D456 /* Project object */;
+}
